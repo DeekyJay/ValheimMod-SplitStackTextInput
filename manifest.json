@@ -1,7 +1,7 @@
 {
     "name": "SplitStackTextInput",
-    "description": "Right Click the slider when splitting a stack to allow you to enter a custom value.",
-    "version_number": "1.0.0",
+    "description": "Splitting a stack hides the slider dialog, and allows you to enter a custom value.",
+    "version_number": "1.1.0",
     "website_url": "https://github.com/DeekyJay/ValheimMod-SplitStackTextInput",
     "dependencies": [
       "denikson-BepInExPack_Valheim-5.4.700"
