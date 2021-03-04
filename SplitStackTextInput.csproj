@@ -73,11 +73,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\ConfigurationManager.cs" />
     <Compile Include="GameClasses\Slider.cs" />
+    <Compile Include="Helpers\SplitReceiver.cs" />
+    <Compile Include="Helpers\SplitReceiverInstance.cs" />
     <Compile Include="SplitStackTextInputPlugin.cs" />
     <Compile Include="GameClasses\InventoryGUI.cs" />
-    <Compile Include="SliderHelpers\SliderTextReceiver.cs" />
-    <Compile Include="SliderHelpers\SliderTextReceiverInstance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -90,5 +91,6 @@
     <Content Include="Libs\UnityEngine.UI.dll" />
     <Content Include="Libs\UnityEngine.UIModule.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

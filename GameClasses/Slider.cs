@@ -1,7 +1,7 @@
 ﻿namespace SplitStackTextInput.GameClasses
 {
     using HarmonyLib;
-    using SplitStackTextInput.SliderHelpers;
+    using SplitStackTextInput.Helpers;
     using UnityEngine.EventSystems;
     using UnityEngine.UI;
 
@@ -14,13 +14,12 @@
             if (TextInput.IsVisible())
             {
                 TextInput.instance.Hide();
-                SliderTextReceiverInstance.Remove();
+                SplitReceiverInstance.Remove();
             }
 
             if (eventData.button == PointerEventData.InputButton.Right)
             {
-                var receiver = SliderTextReceiverInstance.Create(__instance);
-                TextInput.instance.RequestText(receiver, "Enter Amount", __instance.maxValue.ToString().Length);
+                SplitReceiverInstance.Create(__instance.maxValue, __instance);
             }    
         }
     }
